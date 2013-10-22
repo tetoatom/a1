@@ -1,5 +1,6 @@
 @import url(../../../stylesheets/application.css);
 @import "mobile.css";
+@import "ideamans.css";
 
 /* A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com */
 
@@ -737,3 +738,4 @@ a.buy-button.blue {
 #title h2, #buttons, #title h1  {
 	min-width: 550px !important;
 }
+

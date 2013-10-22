@@ -1,0 +1,12 @@
+
+#top-menu {
+    padding-bottom: 7px !important;
+}
+
+#top-menu ul li {
+    font-size: 12px;
+}
+
+#top-menu a {
+    font-weight: normal !important;
+}
