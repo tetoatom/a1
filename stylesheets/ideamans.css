@@ -3,7 +3,7 @@
     padding-bottom: 7px !important;
 }
 
-#top-menu ul li {
+#top-menu div, #top-menu ul li {
     font-size: 12px;
 }
 
