@@ -21,7 +21,8 @@ domready(function () {
   if (media != 'mobile')
     return
 
-  document.getElementsByTagName("body")[0].addClassName("js");
+  //document.getElementsByTagName("body")[0].addClassName("js");
+  document.getElementsByTagName("body")[0].classList.add("js");
   // move sidebar to bottom
   move_into("main", "sidebar");
   // move search into top nav
@@ -36,13 +37,16 @@ domready(function () {
     button.setAttribute("class", "toggle-button for-topmenu");
     button.onclick = function() {
       var t = document.getElementById("top-menu");
-      if (t.hasClassName('open')) {
+      // if (t.hasClassName('open')) {
+      if (t.classList.contains('open')) {
         // t.slideUp();
-        t.removeClassName('open');
+        // t.removeClassName('open');
+        t.classList.remove('open');
       }
       else {
         // t.slideDown();
-        t.addClassName('open');
+        // t.addClassName('open');
+        t.classList.add('open');
       }
     }
 
@@ -58,13 +62,16 @@ domready(function () {
     button.setAttribute("class", "toggle-button for-main-menu");
     button.onclick = function() {
       var t = document.getElementById("main-menu");
-      if (t.hasClassName('open')) {
+      // if (t.hasClassName('open')) {
+      if (t.classList.contains('open')) {
         // t.slideUp();
-        t.removeClassName('open');
+        // t.removeClassName('open');
+        t.classList.remove('open');
       }
       else {
         // t.slideDown();
-        t.addClassName('open');
+        // t.addClassName('open');
+        t.classList.add('open');
       }
     }
 
